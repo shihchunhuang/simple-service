@@ -1,0 +1,26 @@
+
+extends layout
+
+block content
+    h1 Incrementing Integers as a service
+    p=token
+    form(action='/service/current',method='GET')
+        input(type='hidden', value='#{token}', name='token')
+        input(type='submit', value='Get Current')
+    br
+    form(action='/service/next',method='GET')
+        input(type='hidden', value='#{token}', name='token')
+        input(type='submit', value='Get Next')
+    br
+    form(action='/service/set-current',method='GET')
+        input(type='hidden', value='#{token}', name='token')
+        input(type='text', name='current', placeHolder='Set current to...', value=current, id='curr')
+        input(type='submit', value='Set Current')
+       
+    br
+    hr
+    button(onclick='logout()') Log out
+    script.
+        function logout(){
+            window.location.href = '/';
+        }

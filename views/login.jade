@@ -1,0 +1,17 @@
+
+extends layout
+
+block content
+    h1 #{title}
+    form(action='/users/login',method='POST')
+        input(type="email", placeholder="Your Email", value=email, name="email")
+        br
+        input(type="password", placeholder="Your Password",value=pw, name="pw")
+        br
+        input(type="submit")
+    hr
+    button(onclick="nevigateToLanding()") Go back
+    script.
+        function nevigateToLanding(){
+            window.location.href = '/';
+        }

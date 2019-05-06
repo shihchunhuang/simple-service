@@ -1,0 +1,14 @@
+extends layout
+
+block content
+  h1 Welcome to #{title}
+  button(onclick="nevigateToRegister()") Register
+  button(onclick="nevigateToLogin()") Login
+  script.
+    function nevigateToRegister() {
+      window.location.href = '/users/register';
+    }
+    function nevigateToLogin() {
+      window.location.href = '/users/login';
+    }
+  
