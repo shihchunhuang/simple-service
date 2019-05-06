@@ -11,9 +11,9 @@ Please clone the project to your local.
 
 in the directory of where you clone your project, run the following command:
 
-npm install
-npm install express
-npm install nodemon
+1. npm install
+2. npm install express
+3. npm install nodemon
 
 After the commands above, you should be able to use command nodemon to run the application.
 
