@@ -17,9 +17,9 @@ npm install nodemon
 
 After the commands above, you should be able to use command nodemon to run the application.
 
-Please go to browser and type on the URL section: localhost:5000.
+Please go to browser and type on the URL section: localhost:9000.
 
-You will see the application is running on localhost:5000.
+You will see the application is running on localhost:9000.
 
 
 
@@ -38,6 +38,8 @@ Limitation and future improvements
 ____________________________________________________________________________
 
 1. The input field for set current is not checked.
+
 2. Navigate button after each service is called.
+
 3. Somehow in Jade's form, method='PUT' is not working. I had to use GET to work around this issue given the limited time.
 
